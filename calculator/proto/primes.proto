@@ -1,0 +1,13 @@
+syntax ="proto3";
+
+package calculator;
+
+option go_package="MyCal/calculator/proto";
+
+message primesRequest{
+    int64 number= 1;
+}
+
+message primesResponse{
+    int64 result=1;
+}

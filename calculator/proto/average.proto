@@ -1,0 +1,15 @@
+syntax="proto3";
+
+package calculator;
+
+option go_package="MyCal/calculator/proto";
+
+
+message AverageRequest{
+    int64 number =1;
+}
+
+message AverageResponse {
+
+    float result=1;
+}

@@ -1,0 +1,19 @@
+syntax="proto3";
+
+
+
+package calculator;
+
+
+option go_package="MyCal/calculator/proto";
+
+
+
+
+message maxRequest {
+    int64 number=1;
+}
+
+message maxresponse {
+    int64 result=1;
+}

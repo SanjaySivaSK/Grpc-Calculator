@@ -1,0 +1,32 @@
+syntax ="proto3";
+
+package calculator;
+
+
+option go_package="MyCal/calculator/proto";
+
+
+
+import "sum.proto"; 
+
+import "div.proto"; 
+
+import "primes.proto";
+
+
+import "average.proto";
+
+
+
+import "max.proto";
+
+
+ service CalculatorService{
+        rpc Div(divRequest) returns (divResponse);
+        rpc Sum(SumRequest) returns (SumResponse);
+        rpc primes(primesRequest) returns (stream primesResponse);
+        rpc average( stream AverageRequest) returns (AverageResponse);
+        rpc max (stream maxRequest) returns (stream maxresponse);
+        
+        
+}
