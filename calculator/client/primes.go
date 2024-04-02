@@ -13,7 +13,7 @@ import (
 func Primes(c pb.CalculatorServiceClient) {
 
 	stream, err := c.Primes(context.Background(), &pb.PrimesRequest{
-		Number: -102,
+		Number: 102,
 	})
 
 	if err != nil {
