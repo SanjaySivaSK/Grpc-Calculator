@@ -37,7 +37,7 @@ func main() {
 
 	c := pb.NewCalculatorServiceClient(conn)
 
-	Domax(c)
+	Sum(c)
 
 	// defer conn.Close()
 } 
